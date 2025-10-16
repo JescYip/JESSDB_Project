@@ -1,139 +1,146 @@
-# 咖啡订购系统 ☕
+# Coffee Ordering System ☕
 
-一个功能完整的咖啡店订购系统，包含现代化的用户界面、数据库管理和详细的业务报告功能。
+A comprehensive coffee shop ordering system with modern user interface, database management, and detailed business reporting features.
 
-## 🌟 功能特点
+## 🌟 Features
 
-### 客户端功能
-- **产品浏览**: 按分类展示咖啡和其他产品
-- **购物车管理**: 添加、修改、删除商品
-- **在线订购**: 完整的订单流程
-- **订单历史**: 查看历史订单和详情
-- **响应式设计**: 支持手机和桌面设备
+### Client Features
+- **Product Browsing**: Browse coffee and other products by category
+- **Shopping Cart Management**: Add, modify, and remove items
+- **Online Ordering**: Complete order processing workflow
+- **Order History**: View past orders and details
+- **Responsive Design**: Support for mobile and desktop devices
+- **Member System**: User registration and login functionality
 
-### 管理后台
-- **实时仪表盘**: 销售概况和关键指标
-- **销售报告**: 按日期范围的详细销售分析
-- **产品分析**: 产品销售排行和统计
-- **客户分析**: 客户消费行为分析
-- **订单管理**: 所有订单的统一管理
+### Admin Dashboard
+- **Real-time Dashboard**: Sales overview and key metrics
+- **Sales Reports**: Detailed sales analysis by date range
+- **Product Analysis**: Product sales rankings and statistics
+- **Customer Analysis**: Customer spending behavior analysis
+- **Order Management**: Unified management of all orders
+- **Secure Access**: Password-protected admin login
 
-### 数据库功能
-- **完整的关系型数据库设计**: 客户、产品、订单、分类等表
-- **数据完整性**: 外键约束和数据验证
-- **会员系统**: 支持普通客户和会员客户
-- **SQL报告**: 使用复杂SQL查询生成管理报告
+### Database Features
+- **Complete Relational Database Design**: Customer, product, order, category tables
+- **Data Integrity**: Foreign key constraints and data validation
+- **Member System**: Support for regular and member customers
+- **SQL Reports**: Complex SQL queries for management reports
 
-## 🚀 快速开始
+## 🚀 Quick Start
 
-### 环境要求
+### Requirements
 - Python 3.7+
 - Flask 2.3+
 - SQLite3
 
-### 安装步骤
+### Installation Steps
 
-1. **克隆项目**
+1. **Clone the project**
    ```bash
    git clone <repository-url>
    cd coffee-ordering-system
    ```
 
-2. **安装依赖**
+2. **Install dependencies**
    ```bash
    pip install -r requirements.txt
    ```
 
-3. **启动应用**
+3. **Start the application**
    ```bash
    python app.py
    ```
 
-4. **访问系统**
-   - 客户端: http://localhost:5000
-   - 管理后台: http://localhost:5000/admin
+4. **Access the system**
+   - Client: http://localhost:5050
+   - Admin Dashboard: http://localhost:5050/admin
+     - Username: `admin`
+     - Password: `admin123`
 
-## 📊 数据库结构
+## 📊 Database Structure
 
-系统采用关系型数据库设计，包含以下主要表：
+The system uses a relational database design with the following main tables:
 
-- **CYEAE_CUSTOMER**: 客户信息表
-- **CYEAE_MEMBER_CUSTOMERS**: 会员客户表
-- **CYEAE_CATEGORY**: 产品分类表
-- **CYEAE_PRODUCT**: 产品信息表
-- **CYEAE_ORDERS**: 订单表
-- **CYEAE_ORDER_ITEMS**: 订单项表
+- **CYEAE_CUSTOMER**: Customer information table
+- **CYEAE_MEMBER_CUSTOMERS**: Member customer table
+- **CYEAE_CATEGORY**: Product category table
+- **CYEAE_PRODUCT**: Product information table
+- **CYEAE_ORDERS**: Orders table
+- **CYEAE_ORDER_ITEMS**: Order items table
 
-## 🎯 主要功能
+## 🎯 Main Features
 
-### 1. 产品管理
-- 按分类展示产品（咖啡、茶饮、甜点、轻食）
-- 产品价格和库存管理
-- 产品销售统计
+### 1. Product Management
+- Display products by category (Coffee, Tea, Desserts, Light Meals)
+- Product pricing and inventory management
+- Product sales statistics
 
-### 2. 订单处理
-- 购物车功能
-- 客户信息收集
-- 多种支付方式支持
-- 订单状态跟踪
+### 2. Order Processing
+- Shopping cart functionality
+- Customer information collection
+- Multiple payment method support
+- Order status tracking
 
-### 3. 客户管理
-- 客户信息管理
-- 会员系统
-- 客户消费分析
+### 3. Customer Management
+- Customer information management
+- Member system with registration and login
+- Customer spending analysis
 
-### 4. 报告系统
-- **销售报告**: 按日期统计销售额、订单数、平均订单价值
-- **产品报告**: 产品销售排行、收入统计
-- **客户报告**: 客户消费排行、忠诚度分析
+### 4. Reporting System
+- **Sales Reports**: Daily sales statistics, order counts, average order values
+- **Product Reports**: Product sales rankings, revenue statistics
+- **Customer Reports**: Customer spending rankings, loyalty analysis
 
-## 🛠 技术栈
+## 🛠 Technology Stack
 
-### 后端
-- **Flask**: Web框架
-- **SQLite**: 数据库
-- **Python**: 后端逻辑
+### Backend
+- **Flask**: Web framework
+- **SQLite**: Database
+- **Python**: Backend logic
 
-### 前端
-- **HTML5/CSS3**: 页面结构和样式
-- **JavaScript**: 交互逻辑
-- **响应式设计**: 适配各种设备
+### Frontend
+- **HTML5/CSS3**: Page structure and styling
+- **JavaScript**: Interactive logic
+- **Responsive Design**: Adapts to various devices
 
-### 数据库
-- **SQLite**: 轻量级关系型数据库
-- **复杂SQL查询**: 生成各种业务报告
+### Database
+- **SQLite**: Lightweight relational database
+- **Complex SQL Queries**: Generate various business reports
 
-## 📱 界面预览
+## 📱 Interface Preview
 
-### 客户端界面
-- 现代化的产品展示页面
-- 直观的购物车管理
-- 简洁的订单流程
-- 清晰的订单历史
+### Client Interface
+- Modern product display page
+- Intuitive shopping cart management
+- Streamlined order process
+- Clear order history
 
-### 管理后台
-- 实时数据仪表盘
-- 详细的销售报告
-- 产品和客户分析
-- 订单管理界面
+### Admin Dashboard
+- Real-time data dashboard
+- Detailed sales reports
+- Product and customer analysis
+- Order management interface
 
-## 🔧 配置说明
+## 🔧 Configuration
 
-### 数据库配置
-系统会自动创建SQLite数据库文件 `coffee_shop.db`，并初始化示例数据。
+### Database Configuration
+The system automatically creates SQLite database file `coffee_shop.db` and initializes sample data.
 
-### 示例数据
-系统包含以下示例数据：
-- 4个产品分类
-- 10种产品
-- 3个示例客户
-- 1个会员客户（用户名：李四，密码：123456）
+### Sample Data
+The system includes the following sample data:
+- 4 product categories
+- 10 products
+- 3 sample customers
+- 1 member customer (Email: sarah@example.com, Password: 123456)
 
-## 📈 报告功能
+### Image Support
+Product images are stored in `static/picture/` directory and served via `/picture/` route.
 
-### SQL查询示例
+## 📈 Reporting Features
 
-1. **销售报告查询**
+### SQL Query Examples
+
+1. **Sales Report Query**
    ```sql
    SELECT 
        DATE(o.ORDER_DATE) as order_date,
@@ -146,7 +153,7 @@
    ORDER BY order_date DESC
    ```
 
-2. **产品销售分析**
+2. **Product Sales Analysis**
    ```sql
    SELECT 
        p.NAME as product_name,
@@ -160,32 +167,41 @@
    ORDER BY total_revenue DESC
    ```
 
-## 🚀 部署建议
+## 🚀 Deployment Recommendations
 
-### 开发环境
-- 使用内置的Flask开发服务器
-- SQLite数据库文件
+### Development Environment
+- Use built-in Flask development server
+- SQLite database file
 
-### 生产环境
-- 使用Gunicorn或uWSGI部署
-- 考虑使用PostgreSQL或MySQL数据库
-- 配置反向代理（Nginx）
-- 启用HTTPS
+### Production Environment
+- Use Gunicorn or uWSGI for deployment
+- Consider PostgreSQL or MySQL database
+- Configure reverse proxy (Nginx)
+- Enable HTTPS
 
-## 🤝 贡献指南
+## 📋 Project Documentation
 
-欢迎提交Issue和Pull Request来改进这个项目！
+This project includes comprehensive documentation:
 
-## 📄 许可证
+- **PROJECT_INITIATION_DOCUMENT.md**: Business values and system scope
+- **DESIGN_SPECIFICATION.md**: E-R diagram and database design
+- **CONFIGURATION_SPECIFICATION.md**: SQL statements and configurations
+- **PROJECT_CONCLUSION.md**: Project assessment and recommendations
 
-本项目采用MIT许可证。
+## 🤝 Contributing
 
-## 📞 支持
+Welcome to submit Issues and Pull Requests to improve this project!
 
-如有问题，请通过以下方式联系：
-- 提交GitHub Issue
-- 发送邮件至项目维护者
+## 📄 License
+
+This project is licensed under the MIT License.
+
+## 📞 Support
+
+For questions, please contact through:
+- Submit GitHub Issues
+- Email the project maintainer
 
 ---
 
-**享受您的咖啡时光！** ☕✨
+**Enjoy your coffee time!** ☕✨
