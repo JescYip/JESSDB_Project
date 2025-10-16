@@ -1,34 +1,36 @@
 #!/bin/bash
 
-echo "🚀 启动咖啡订购系统..."
-echo "================================"
+echo "🚀 Starting Coffee Ordering System..."
+echo "=================================="
 
-# 检查Python环境
+# Check Python environment
 if ! command -v python3 &> /dev/null; then
-    echo "❌ Python3 未安装，请先安装Python3"
+    echo "❌ Python3 not installed, please install Python3 first"
     exit 1
 fi
 
-# 检查依赖
-echo "📦 检查依赖..."
+# Check dependencies
+echo "📦 Checking dependencies..."
 python3 -c "import flask, flask_cors" 2>/dev/null
 if [ $? -ne 0 ]; then
-    echo "📦 安装依赖..."
+    echo "📦 Installing dependencies..."
     pip3 install flask flask-cors
 fi
 
-# 初始化数据库
-echo "🗄️  初始化数据库..."
+# Initialize database
+echo "🗄️  Initializing database..."
 python3 -c "from database import DatabaseManager; DatabaseManager()"
 
-echo "✅ 系统准备就绪！"
+echo "✅ System ready!"
 echo ""
-echo "🌐 启动Web服务器..."
-echo "📱 客户端访问地址: http://localhost:5000"
-echo "🔧 管理后台地址: http://localhost:5000/admin"
+echo "🌐 Starting web server..."
+echo "📱 Client access: http://localhost:5050"
+echo "🔧 Admin dashboard: http://localhost:5050/admin"
+echo "   Username: admin"
+echo "   Password: admin123"
 echo ""
-echo "按 Ctrl+C 停止服务器"
-echo "================================"
+echo "Press Ctrl+C to stop the server"
+echo "=================================="
 
-# 启动Flask应用
+# Start Flask application
 python3 app.py
